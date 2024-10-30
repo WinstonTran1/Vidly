@@ -232,6 +232,10 @@
     <Compile Include="Migrations\202410301957284_FixMovieDates.designer.cs">
       <DependentUpon>202410301957284_FixMovieDates.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202410302022247_ExplicitGenreIDfk.cs" />
+    <Compile Include="Migrations\202410302022247_ExplicitGenreIDfk.designer.cs">
+      <DependentUpon>202410302022247_ExplicitGenreIDfk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -365,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410301957284_FixMovieDates.resx">
       <DependentUpon>202410301957284_FixMovieDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410302022247_ExplicitGenreIDfk.resx">
+      <DependentUpon>202410302022247_ExplicitGenreIDfk.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
