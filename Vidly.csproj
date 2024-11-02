@@ -236,6 +236,14 @@
     <Compile Include="Migrations\202410302022247_ExplicitGenreIDfk.designer.cs">
       <DependentUpon>202410302022247_ExplicitGenreIDfk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411010233520_PrepMovieForm.cs" />
+    <Compile Include="Migrations\202411010233520_PrepMovieForm.designer.cs">
+      <DependentUpon>202411010233520_PrepMovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411010304564_MakeDateTimeNullableInMovies.cs" />
+    <Compile Include="Migrations\202411010304564_MakeDateTimeNullableInMovies.designer.cs">
+      <DependentUpon>202411010304564_MakeDateTimeNullableInMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -247,6 +255,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -310,8 +319,8 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -374,6 +383,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410302022247_ExplicitGenreIDfk.resx">
       <DependentUpon>202410302022247_ExplicitGenreIDfk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411010233520_PrepMovieForm.resx">
+      <DependentUpon>202411010233520_PrepMovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411010304564_MakeDateTimeNullableInMovies.resx">
+      <DependentUpon>202411010304564_MakeDateTimeNullableInMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
