@@ -29,20 +29,25 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Edit(int id)
         {
             var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(mov => mov.Id == id);
-            if (movie != null)
-                return View(movie);
-            else
+            if (movie == null)
                 return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Genres = _context.Genres.ToList(),
+                Movie = movie
+            };
+            return View("MovieForm", viewModel);
         }
 
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
             var viewModel = new MovieFormViewModel { Genres = genres };
-            return View("New", viewModel);
+            return View("MovieForm", viewModel);
         }
 
         [HttpPost]
