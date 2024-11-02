@@ -6,7 +6,11 @@
 }
 
 <h1>Movies</h1>
-
+@using (Html.BeginForm("New", "Movies"))
+{
+    <button type="submit" class="btn btn-primary">New Movie</button>
+}
+<p></p>
 <table class="table table-bordered table-hover">
     <tr>
         <th>Movie</th>
