@@ -10,6 +10,7 @@ namespace Vidly
     {
         public static void Register(HttpConfiguration config)
         {
+            // Make JSON CamelCase to make it more visually appealing when working with Javascript
             var settings = config.Formatters.JsonFormatter.SerializerSettings;
             settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             settings.Formatting = Newtonsoft.Json.Formatting.Indented;
