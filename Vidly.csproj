@@ -291,15 +291,26 @@
     <Compile Include="Migrations\202411060219541_AddDrivingLicenseToApplicationUser.designer.cs">
       <DependentUpon>202411060219541_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411062120205_AddPhoneToAccount.cs" />
+    <Compile Include="Migrations\202411062120205_AddPhoneToAccount.designer.cs">
+      <DependentUpon>202411062120205_AddPhoneToAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411062129594_LimitPhoneLength.cs" />
+    <Compile Include="Migrations\202411062129594_LimitPhoneLength.designer.cs">
+      <DependentUpon>202411062129594_LimitPhoneLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -620,6 +631,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202411060219541_AddDrivingLicenseToApplicationUser.resx">
       <DependentUpon>202411060219541_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411062120205_AddPhoneToAccount.resx">
+      <DependentUpon>202411062120205_AddPhoneToAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411062129594_LimitPhoneLength.resx">
+      <DependentUpon>202411062129594_LimitPhoneLength.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
